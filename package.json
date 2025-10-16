@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "Smoke_Test": "npx playwright test --grep @smoke",
+    "SmokeTest_Chrome": "npx playwright test tests/SmokeTest.spec.ts --project=chromium",
+    "Smoke_Test_Listener": "npx playwright test --grep @smoke --list"
+    
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
